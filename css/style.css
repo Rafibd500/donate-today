@@ -15,18 +15,21 @@ p {
     padding: 0;
     line-height: 0.8;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     width: 1170px;
     margin: 0 auto;
 }
+
 /* common css end */
 
 
 /* banner part start */
-#banner{
+#banner {
     padding: 300px 0px;
     background: url("../images/donation5.jpg");
     background-repeat: no-repeat;
@@ -34,25 +37,28 @@ a{
     background-size: cover;
     text-align: center;
     position: relative;
-    
+
 }
-#banner::after{
-    content:'';
+
+#banner::after {
+    content: '';
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom,#ffffff00, #121212);
+    background: linear-gradient(to bottom, #ffffff00, #121212);
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: 1;
-    
+
 }
-#banner .banner__text{
+
+#banner .banner__text {
     position: relative;
     z-index: 999;
     padding: 0px 100px;
 }
-#banner h3{
+
+#banner h3 {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 65px;
@@ -61,7 +67,8 @@ a{
     letter-spacing: 0px;
 
 }
-#banner p{
+
+#banner p {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -70,7 +77,8 @@ a{
     letter-spacing: 0px;
     padding: 20px 0px;
 }
-.common__btn{
+
+.common__btn {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -88,18 +96,20 @@ a{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 /* banner part end */
 
 /* donate part start */
-#donate{
+#donate {
     padding: 100px 0px;
 
 }
 
-.common__head{
+.common__head {
     padding: 0px 150px;
 }
-.common__head h3{
+
+.common__head h3 {
     color: #121212;
     font-family: 'Inter', sans-serif;
     font-size: 45px;
@@ -108,7 +118,8 @@ a{
     letter-spacing: 0px;
     text-align: center;
 }
-.common__head p{
+
+.common__head p {
     color: #707070;
     font-family: Poppins;
     font-size: 18px;
@@ -119,12 +130,14 @@ a{
     padding: 30px 0px;
 
 }
-.donate__amount{
+
+.donate__amount {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
-.donate__amount .amount__item{
+
+.donate__amount .amount__item {
     width: 200px;
     height: 200px;
     text-align: center;
@@ -144,41 +157,223 @@ a{
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
 }
-.donate__amount .amount__item:hover{
+
+.donate__amount .amount__item:hover {
     background-color: #ffeeee;
     border: 3px solid #ff5959;
     cursor: pointer;
 }
-.donate__amount .amount__item.active{
+
+.donate__amount .amount__item.active {
     background-color: #ffeeee;
     border: 3px solid #ff5959;
     cursor: pointer;
 }
-.donate__amount .amount__item h4{
+
+.donate__amount .amount__item h4 {
     color: #707070;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0px;
-    
+
 }
-.other__amount{
+
+.other__amount {
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 15px;
+    text-align: center;
 }
-.other__amount h4{
+
+.other__amount a {
     color: #b3b3b3;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0px;
-    text-align: center;
 
 }
-.donate__btn{
+
+.donate__btn {
     text-align: center;
     margin-top: 30px;
 }
+
 /* donate part end */
+
+/* donate plan part start */
+#donate__plan {
+    padding: 100px 0px;
+}
+
+.plan__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan__item {
+    width: 26%;
+    padding: 60px 40px 60px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.plan__item:nth-child(1) {
+    background-color: rgba(79, 157, 166, 0.1);
+}
+
+.plan__item:nth-child(2) {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+.plan__item:nth-child(3) {
+    background-color: rgb(255, 244, 214);
+}
+
+.plan__item img {}
+
+.plan__item h4 {
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 20px 0px;
+
+}
+
+.plan__item p {
+    color: #707070;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+/* donate plan part end */
+
+/* blog part start */
+#blogs {
+    padding: 50px 0px;
+}
+
+.blog__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blog__item {
+    width: 28%;
+    padding: 20px;
+    box-shadow: 0px 0px 30px #d0cccc;
+    border-radius: 10px;
+}
+
+.blog__item img {
+    width: 100%;
+}
+
+.blog__item h3 {
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.blog__item p {
+    color: #707070;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.blog__item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF5959;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 1px solid #FF5959;
+}
+
+/* blog part end */
+
+/* update part start */
+#update {
+    padding: 50px 0px;
+
+}
+
+.form__wrapper {
+    text-align: center;
+    padding: 75px 0px;
+    background-color: #FFF4D6;
+}
+
+.form__wrapper form input {
+    border: none;
+    line-height: 50px;
+    padding: 0px 15px;
+}
+
+.form__wrapper form input:nth-child(1) {
+    background-color: #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -ms-border-radius: 5px 0px 0px 5px;
+    -o-border-radius: 5px 0px 0px 5px;
+}
+.form__wrapper form input:nth-child(1):focus{
+    outline: 1px solid #FF5959;
+}
+.form__wrapper form input:nth-child(1)::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+}
+
+.form__wrapper form input:nth-child(2) {
+    border-radius: 0px 5px 5px 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 20px;
+    margin-left: -5px;
+}
+.form__wrapper form input:nth-child(2):hover{
+    cursor: pointer;
+}
+/* update part end */
+
+/* footer part start  */
+
+/* footer part end */
+
+
+
